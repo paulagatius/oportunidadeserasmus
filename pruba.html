@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Empresa</title>
+    <link rel="stylesheet" href="prueba.css">
+</head>
+<body>
+
+<!-- Menú de navegación -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="paginaprincipal.html">
+                <img src="imagenes/logoweb.png" alt="Logo">
+            </a>
+        </div>
+        <ul class="nav-links">
+            <li class="dropdown">
+                <a href="sobreporto.html" class="dropdown-toggle">Sobre Porto</a>
+                <ul class="dropdown-menu">
+                    <li><a href="transporte.html">Transporte</a></li>
+                    <li><a href="gastronomia.html">Gastronomía</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="vidasocial.html" class="dropdown-toggle">Vida Social y Ocio</a>
+                <ul class="dropdown-menu">
+                    <li><a href="excursionesyviajes.html">Excursiones Y Viajes Cercanos</a></li>
+                    <li><a href="comunidaderasmus.html">Comunidad Erasmus</a></li>
+                </ul>
+            </li>
+            <li><a href="alojamiento.html">Alojamiento</a></li>
+            <li><a href="consejospracticos.html">Consejos Prácticos</a></li>
+            <li><a href="q&a.html">Q&A</a></li>
+            <li><a href="testpreparacion.html">Test de Preparación</a></li>
+        </ul>
+        <div class="logo1">
+            <a href="usuario.html">
+                <img src="imagenes/usuario.png" alt="" width="30px">
+            </a>
+        </div>
+    </nav>
+    
+    <div class="imagenpuente-contenedor">
+        <img src="imagenes/puenteluis.jpg" alt="Puente Luís I">
+        <div class="text-overlay">
+            <h1 class="titulo">Tu aventura Erasmus en Porto comienza aquí</h1>
+        </div>
+    </div>
+
+
+    <section class="contacto-info">
+        <h2>Datos de la empresa</h2>
+        <ul>
+            <li><strong>Teléfono:</strong> +34 642 95 16 01</li>
+            <li><strong>Email:</strong> oportunidadeserasmus@info.com</li>
+        </ul>
+    </section>
+    <section class="formulario-contacto">
+        <h2>¿Alguna duda?</h2>
+        <form action="enviar_formulario.php" method="POST">
+            <label class="label-contacto" for="nombre">Nombre:</label>
+            <input class="input-contacto" type="text" id="nombre" name="nombre" required>
+            
+            <label class="label-contacto" for="email">Correo electrónico:</label>
+            <input class="input-contacto" type="email" id="email" name="email" required>
+            
+            <label class="label-contacto" for="mensaje">Mensaje:</label>
+            <textarea class="textarea-contacto" id="mensaje" name="mensaje" rows="5" required></textarea>
+            
+            <button class="button-contacto" type="submit">Enviar</button>
+        </form>
+    </section>
+</body>
+</html>

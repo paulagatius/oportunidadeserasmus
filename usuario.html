@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro e Inicio de Sesión - Oportunidades Erasmus</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="registro">
+    <!-- Menú de navegación -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="paginaprincipal.html">
+                <img src="imagenes/logoweb.png" alt="Logo">
+            </a>
+        </div>
+        <ul class="nav-links">
+            <li class="dropdown">
+                <a href="sobreporto.html" class="dropdown-toggle">Sobre Porto</a>
+                <ul class="dropdown-menu">
+                    <li><a href="transporte.html">Transporte</a></li>
+                    <li><a href="gastronomia.html">Gastronomía</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="vidasocial.html" class="dropdown-toggle">Vida Social y Ocio</a>
+                <ul class="dropdown-menu">
+                    <li><a href="excursionesyviajes.html">Excursiones Y Viajes Cercanos</a></li>
+                    <li><a href="comunidaderasmus.html">Comunidad Erasmus</a></li>
+                </ul>
+            </li>
+            <li><a href="alojamiento.html">Alojamiento</a></li>
+            <li><a href="consejospracticos.html">Consejos Prácticos</a></li>
+            <li><a href="q&a.html">Q&A</a></li>
+            <li><a href="testpreparacion.html">Test de Preparación</a></li>
+        </ul>
+        <div class="logo1">
+            <a href="usuario.html">
+                <img src="imagenes/usuario.png" alt="" width="30px">
+            </a>
+        </div>
+    </nav>
+
+
+    <!--registro-->
+    <body class="registro">
+        <div class="container-registro" id="form-container">
+            <!-- Formulario de inicio de sesión -->
+            <form id="login-form">
+                <h2 class="h2-registro">Iniciar Sesión</h2>
+                <div class="form-group-registro">
+                    <label class="label-registro" for="email">Correo Electrónico</label>
+                    <input class="input-registro" type="email" id="email" placeholder="Ingresa tu correo" required>
+                </div>
+                <div class="form-group-registro">
+                    <label class="label-registro" for="password">Contraseña</label>
+                    <input class="input-registro" type="password" id="password" placeholder="Ingresa tu contraseña" required>
+                </div>
+                <button class="button-registro" type="submit">Entrar</button>
+                <div class="switch-registro">
+                    ¿No tienes una cuenta? <a href="#" onclick="showRegisterForm()">Regístrate</a>
+                </div>
+            </form>
+    
+            <!-- Formulario de registro -->
+            <form id="register-form" style="display: none;">
+                <h2>Registro</h2>
+                <div class="form-group-registro">
+                    <label class="label-registro" for="name">Nombre</label>
+                    <input class="input-registro" type="text" id="name" placeholder="Ingresa tu nombre" required>
+                </div>
+                <div class="form-group-registro">
+                    <label class="label-registro" for="email-register">Correo Electrónico</label>
+                    <input class="input-registro" type="email" id="email-register" placeholder="Ingresa tu correo" required>
+                </div>
+                <div class="form-group-registro">
+                    <label class="label-registro" for="password-register">Contraseña</label>
+                    <input class="input-registro" type="password" id="password-register" placeholder="Crea una contraseña" required>
+                </div>
+                <button class="button-registro" type="submit">Registrar</button>
+                <div class="switch-registro">
+                    ¿Ya tienes una cuenta? <a href="#" onclick="showLoginForm()">Inicia Sesión</a>
+                </div>
+            </form>
+        </div>
+    
+        <script>
+            function showRegisterForm() {
+                document.getElementById('login-form').style.display = 'none';
+                document.getElementById('register-form').style.display = 'block';
+            }
+    
+            function showLoginForm() {
+                document.getElementById('register-form').style.display = 'none';
+                document.getElementById('login-form').style.display = 'block';
+            }
+        </script>
+    </body>
+</body>
+</html>

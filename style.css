@@ -1,0 +1,1034 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-style: italic;
+    font-size: 40px;
+    text-align: center;
+}
+
+h2 {
+    font-style: italic;
+    font-size: 30px;
+    text-align: center;
+}
+
+h3 {
+    font-style: italic;
+    font-size: 20px;
+    text-align: center;
+}
+
+h6 {
+    font-size: 18px;
+}
+
+p {
+    text-align: justify;
+    padding-left: 8%;
+    padding-right: 8%;
+    font-size: 16px;
+    margin-bottom: 1%;
+}
+
+h5 {
+    text-align: justify;
+    padding-left: 8%;
+    padding-right: 8%;
+    font-size: 17px;
+    margin-bottom: 1%;
+}
+
+.vidasocial-letra {
+    text-align: justify;
+    padding-left: 8%;
+    padding-right: 8%;
+    font-size: 16px;
+    margin-bottom: 1%;
+}
+
+
+
+/* Estilos del menú de navegación */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0); /* Fondo negro semitransparente */
+    z-index: 10;
+}
+
+.logo img {
+    height: 50px;
+    width: auto;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links-blanco {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links-amarillo {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links-blanco {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links-amarillo {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links-blanco li {
+    position: relative;
+}
+
+.nav-links-amarillo li {
+    position: relative;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #000000;
+    padding: 10px 15px;
+    display: block;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-links-blanco a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 10px 15px;
+    display: block;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-links-amarillo a {
+    text-decoration: none;
+    color: #ff7a00;
+    padding: 10px 15px;
+    display: block;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: #f4f4f4;
+    color: #ff7a00;
+}
+
+.nav-links-blanco a:hover {
+    background-color: #f4f4f4;
+    color: #ff7a00;
+}
+
+.nav-links-amarillo a:hover {
+    background-color: #f4f4f4;
+    color: #ff7a00;
+}
+
+/* Submenús */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgb(255, 253, 253);
+    border: 1px solid #ccc;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+}
+
+.dropdown-menu li {
+    width: 200px;
+}
+
+.dropdown-menu a {
+    padding: 10px 15px;
+    color: #333;
+    font-size: 14px;
+}
+
+.dropdown-menu a:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: #ff7a00;
+}
+
+/* Mostrar submenú al pasar el mouse */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links li {
+        width: 100%;
+    }
+
+    .dropdown-menu {
+        position: static;
+        box-shadow: none;
+        border: none;
+    }
+}
+
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        background-color: #444;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 200px;
+        display: none;
+        padding: 10px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .navbar {
+        flex-wrap: wrap;
+    }
+
+    .dropdown-menu {
+        position: static;
+        box-shadow: none;
+        border: none;
+    }
+}
+
+
+
+
+/*curiosidades*/
+.bloquecuriosidades {
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    max-width: 100%;
+    margin: 4%;
+    padding-left: 58px;
+}
+
+.bloquecuriosidades-esn {
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    max-width: 100%;
+    margin: 4%;
+}
+
+.bloquecuriosidades img {
+    width: 50%;
+    height: 150px;
+    border-radius: 8px;
+    object-fit: cover;
+    padding-left: 0px;
+}
+
+.bloquecuriosidades-esn img {
+    width: 50%;
+    height: 150px;
+    border-radius: 8px;
+    object-fit: cover;
+    margin-left: 4%;
+}
+
+.textocuriosidades h4 {
+    margin: 0;
+    font-size: 1.5rem;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+.textocuriosidades-esn h4 {
+    margin: 0;
+    font-size: 1.5rem;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+.textocuriosidades p {
+    margin: 0;
+    font-size: 1rem;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+.textocuriosidades-esn p {
+    margin: 0;
+    font-size: 1rem;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+
+/*Contenedor imagen*/
+.imagenpuente-contenedor {
+    position: relative;
+    width: 1500px;
+    height: 650px;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.imagenpuente-contenedor img {
+    width: 1500px;
+    height: 650px;
+    display: block;
+}
+
+
+/*texto sobre imagen*/
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.text-overlay h1 {
+    font-size: 4rem;
+    margin-bottom: 10px;
+}
+
+.imagenpuente-contenedor.text-overlay img {
+    display: flex;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+}
+
+
+/*categorias*/
+.categorias {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 100px;
+}
+
+.categorias-viajes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 100px;
+}
+
+.categorias2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 100px;
+}
+
+.categorias3 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 100px;
+}
+
+.boton {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.boton-viajes {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.boton span {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.boton:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+} 
+
+
+/*pie de página*/
+footer {
+    background-color: #fff;
+    padding: 40px 20px;
+    border-top: 1px solid #ddd;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-links h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.footer-links ul {
+    list-style: none;
+}
+
+.footer-links li {
+    margin-bottom: 8px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #0073e6;
+}
+
+
+/*productos*/
+.product-card {
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    max-width: 100%;
+    margin: 4%;
+}
+
+.product-card img {
+    width: 50%;
+    height: 150px;
+    border-radius: 8px;
+    object-fit: cover;
+    margin-left: 4%;
+}
+
+.textproduct p {
+    margin: 0;
+    font-size: 1rem;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+.textproduct h4 {
+    margin: 0;
+    font-size: 1.5rem;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+
+
+
+/* Contenedor principal */
+.menu-container {
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: auto;
+    align-items: center;
+}
+
+/* Barra lateral */
+.sidebar {
+    width: 25%;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h2 {
+    color: #6C8EBF;
+    margin-bottom: 0.5rem;
+}
+
+.product-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.product-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.product-item.active, .product-item:hover {
+    background-color: #EFF4FC;
+}
+
+.product-item img {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+}
+
+/* Detalles del producto */
+.product-details {
+    flex: 1;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.image-section {
+    width: 50%;
+    text-align: center;
+}
+
+.main-image {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+
+
+/* Información del producto */
+.info-section {
+    width: 50%;    
+}
+
+.info-section h3 {
+    color: #6C8EBF;
+    margin-bottom: 0.5rem;
+}
+
+
+/*Transporte*/
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-transporte {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 20px;
+}
+
+
+.menu-item-transporte {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 280px;
+    text-align: center;
+    padding: 15px;
+}
+
+.menu-item-transporte img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.menu-item-transporte h3 {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #333;
+}
+
+.menu-item-transporte p {
+    font-size: 14px;
+    color: #666;
+    margin: 10px 0;
+}
+
+
+
+/*preguntas frecuentes*/
+.container-preguntas .preguntas {
+    margin-bottom: 20px;
+    position: relative;
+    padding-left: 150px;
+    color: rgb(183, 121, 7);
+}
+
+.container-preguntas .preguntas p {
+    padding-left: 40px;
+    color: #000000;
+}
+
+
+
+
+/*excursiones*/
+.destinos, .otros-lugares {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+  
+.card, .card-small {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    width: 250px;
+}
+  
+.card-small {
+    width: 180px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.imagen-placeholder {
+    width: 100%;
+    height: 150px;
+    background: #e0e0e0;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+  
+button {
+    background: #ffa513;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+  
+button:hover {
+    background: #de9218;
+}
+
+.esn-logo img {
+    margin: auto;
+    text-align: center;
+    align-items: center;
+
+}
+
+
+
+/*viajes*/
+
+.gallery-viajes {
+    display: flex;
+    gap: 20px;
+    padding-left: 95px;
+}
+
+.gallery-viajes-mapa {
+    display: flex;
+    gap: 20px;
+    padding-left: 35%;
+}
+
+.gallery-viajes-mapa-coimbra {
+    display: flex;
+    gap: 20px;
+    padding-left: 35%;
+}
+
+.gallery-viajes-mapa-rutacoche {
+    display: flex;
+    gap: 20px;
+    padding-left: 35%;
+}
+
+.gallery-viajes-mapa-lisboa {
+    display: flex;
+    gap: 20px;
+    padding-left: 30%;
+}
+
+.gallery-viajes-mapa-braga {
+    display: flex;
+    gap: 20px;
+    padding-left: 35%;
+}
+  
+.gallery-item-viajes {
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery-item-viajes-mapa {
+    width: 400px;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery-item-viajes-mapa-coimbra {
+    width: 400px;
+    height: 550px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery-item-viajes-mapa-rutacoche {
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery-item-viajes-mapa-lisboa {
+    width: 55%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery-item-viajes-mapa-braga {
+    width: 45%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.gallery-item-viajes img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item-viajes-mapa img {
+    width: 90%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item-viajes-mapa-coimbra img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item-viajes-mapa-rutacoche img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item-viajes-mapa-lisboa img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item-viajes-mapa-braga img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+  
+
+/*registro*/
+.registro {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: url('imagenes/aveiro/aveiro.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container-registro {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+.h2-registro {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-registro {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group-registro {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.label-registro {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.input-registro {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.button-registro {
+    background-color: #ff9d2d;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.button-registro:hover {
+    background-color: #d6862a;
+}
+
+.switch-registro {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.switch-registro a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.switch-registro a:hover {
+    text-decoration: underline;
+}
+
+
+
+/*boton test*/
+/* Estilos para el botón */
+.test {
+    align-items: center;
+    text-align: center;
+    padding-inline: 50px;
+}
+
+.test-resi {
+    align-items: center;
+    text-align: center;
+}
+
+.boton-test {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #ff9d2d;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.boton-test-resi {
+    display: block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #ff9d2d;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Efecto al pasar el mouse */
+.boton-test:hover {
+    background-color: #d6862a;
+}
+
+
+/*contacto*/
+.contacto {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.section-contacto {
+    padding: 20px;
+    margin: 100px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contacto-info ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+.contacto-info li {
+    margin: 10px 0;
+}
+
+.label-contacto {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.input-contacto, .textarea-contacto {
+    width: 95%;
+    padding: 20px;
+    margin-top: 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.textarea-contacto {
+    resize: vertical;
+}
+
+.button-contacto {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.button-contacto:hover {
+    background-color: #555;
+}
